@@ -1,0 +1,52 @@
+baseURL = 'https://8023.lol/'
+locale = 'zh-cn'
+title = '8023'
+theme = 'PaperMod'
+
+publishDir = 'public'
+defaultContentLanguage = 'zh-cn'
+hasCJKLanguage = true
+summaryLength = 50
+paginate = 10
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[[menu.main]]
+  name = '首页'
+  url = '/'
+  weight = 1
+[[menu.main]]
+  name = '文章'
+  url = '/posts/'
+  weight = 2
+[[menu.main]]
+  name = '关于'
+  url = '/about/'
+  weight = 3
+
+[params]
+  title = '8023'
+  description = '一个安静的个人博客'
+  author = '8023'
+  showToc = true
+  TocOpen = false
+  homeInfoParams = { Title = "你好，我是 8023 👋", Content = "这里记录我的想法、项目和日常。" }
+  socialIcons = [
+    { name = "GitHub", url = "https://github.com/gb8023" },
+    { name = "RSS", url = "/index.xml" },
+  ]
+  cover = { linkFullImages = true, responsiveImages = true }
+  hideEmailInSearchResults = true
+  keywords = ["博客", "技术", "生活"]
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.x]
+    disable = true
+  [privacy.youtube]
+    disable = true
